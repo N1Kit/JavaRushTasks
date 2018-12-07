@@ -15,15 +15,16 @@ public class Solution {
         String buf;
 
         do {
-            int i = 0;
+            int i = 0;              //a=a+b; b=a-b; a=a-b; => a=a+b-(b=a)
+
             buf = newSent[i];
             newSent[i] = newSent[i+1];
-            newSent[i+1]=buf;
+            newSent[i+1] = buf;
             System.out.print(newSent[i]+newSent[i+1]+newSent[i+2]);
             System.out.println();
             buf = newSent[i];
-            newSent[i]=newSent[i+2];
-            newSent[i+2]=buf;
+            newSent[i] = newSent[i+2];
+            newSent[i+2] = buf;
             System.out.print(newSent[i]+newSent[i+1]+newSent[i+2]);
             System.out.println();
 /*            buf = newSent[i];
