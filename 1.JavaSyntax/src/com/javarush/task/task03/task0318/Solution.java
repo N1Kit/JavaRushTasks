@@ -10,7 +10,13 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-        Scanner scanner = new Scanner(System.in);
-
+        //лучше так
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String sAge = bufferedReader.readLine();
+        String name = bufferedReader.readLine();
+        int nAge = Integer.parseInt(sAge);
+        System.out.println(name + " захватит мир через " + nAge + " лет. Му-ха-ха!");
     }
 }
