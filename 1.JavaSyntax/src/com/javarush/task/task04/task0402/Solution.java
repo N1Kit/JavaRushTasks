@@ -17,7 +17,7 @@ public class Solution {
 
         public static void addPrice(int applesPrice) {
             //напишите тут ваш код
-            applesPrice += applesPrice;
+            Apple.applesPrice += applesPrice;
         }
     }
 }
