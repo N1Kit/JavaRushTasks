@@ -20,12 +20,28 @@ public class Solution {
         scanner.close();
         */
 
-        /*  Так будет получше
-
+        //  Так будет получше
+        /*
+        Scanner scanner = new Scanner(System.in);
+        int age = 0;
+        String name = "";
+        if (scanner.hasNextInt()) {                 //проверка являются ли введенные данные числом
+            age = Integer.parseInt(scanner.nextLine());
+        } else {
+            System.out.println("Это не ЧИСЛО! Перезапустите программу и введите ЧИСЛО.");
+        }
+        if (scanner.hasNextLine()) {                //проверка являются ли введенные данные строкой, хотя при вводе числа компилятор воспринимает его строкой
+            name = scanner.nextLine();
+        } else {
+            System.out.println("Это не СТРОКА! Перезапустите программу и введите СТРОКУ.");
+        }
+        System.out.println(name + " захватит мир через " + age + " лет. Му-ха-ха!");
+        scanner.close();
          */
 
+
         //лучше всего так
-        InputStream inputStream = System.in;
+      InputStream inputStream = System.in;
         Reader inputStreamReader = new InputStreamReader(inputStream);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
         String sAge = bufferedReader.readLine();
