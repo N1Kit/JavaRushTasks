@@ -6,7 +6,8 @@ package com.javarush.task.task01.task0133;
 
 public class Solution {
     public static void main(String[] args) {
-        int secondsAfter15 = 0;
+        int sec = 60;
+        int secondsAfter15 = 30 * sec;
         System.out.println(secondsAfter15);
     }
 }

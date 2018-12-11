@@ -11,9 +11,9 @@ public class Solution {
 
         for (int i=1; i < tab.length; i++){
             for (int j=1; j < tab.length; j++){
-                tab [i][j] = i * j;
-                System.out.print(" ");
-                System.out.print(tab[i][j]);
+                //tab [i][j] = i * j;
+                System.out.print(i*j + " ");
+                //System.out.print(tab[i][j]);
             }
             System.out.println();
         }
