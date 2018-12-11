@@ -13,6 +13,5 @@ public class Solution {
         for (int i=0; i<10; i++){
             out("Я хочу большую зарплату, и для этого изучаю Java");
         }
-
     }
 }
