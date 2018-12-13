@@ -6,6 +6,7 @@ package com.javarush.task.task04.task0416;
 
 import java.io.*;
 import java.util.Scanner;
+import java.util.function.DoubleToIntFunction;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
@@ -13,13 +14,12 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);
         double min = Double.parseDouble(scanner.nextLine());
         String trafficLight;
-        if (min/3<=1){
+        if (min%5>=0 && min%5<3){
             trafficLight = "зеленый";
-        }   else if (min/4>=1 && min/4<=1.25){
+        }   else if (min%5>=3 && min%5<4){
             trafficLight = "желтый";
-        } else if (min/5>=1 && min/5<=1.19)
+        } else
             trafficLight = "красный";
-        else trafficLight = "";
         System.out.println(trafficLight);
     }
 }
