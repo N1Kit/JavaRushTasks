@@ -14,7 +14,7 @@ public class Solution {
         int two = Integer.parseInt(sc.nextLine());
         int three = Integer.parseInt(sc.nextLine());
 
-        int[] mas = {one, two, three};
+//        int[] mas = {one, two, three};
 //        for (int i = 0; i < mas.length; i++) {
 //            for (int j = i + 1; j < mas.length - 1; j++) {
                 if (one == two) {
