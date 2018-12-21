@@ -17,6 +17,7 @@ public class Solution {
         for (int i = 0; i < nums.length; i++) {
             nums[i] = Integer.parseInt(bufferedReader.readLine());
         }
+        bufferedReader.close();
         int max = nums[0];
 
         for (int i = 0; i < nums.length; i++) {

@@ -17,8 +17,6 @@ public class Solution {
         if (buf==0) number=0;
         System.out.println(number);
 
-        inputStream.close();
-        inputStreamReader.close();
         bufferedReader.close();
     }
 

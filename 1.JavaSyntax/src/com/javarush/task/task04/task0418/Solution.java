@@ -12,6 +12,8 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int number1 = Integer.parseInt(reader.readLine());
         int number2 = Integer.parseInt(reader.readLine());
+        reader.close();
+
         int min=number1 <= number2? number1 : number2;
         System.out.println(min);
     }
