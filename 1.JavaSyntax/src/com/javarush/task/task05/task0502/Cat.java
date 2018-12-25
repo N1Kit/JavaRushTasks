@@ -14,6 +14,7 @@ public class Cat {
 
     public boolean fight(Cat anotherCat) {
         //напишите тут ваш код
+        return true;
     }
 
     public static void main(String[] args) {
