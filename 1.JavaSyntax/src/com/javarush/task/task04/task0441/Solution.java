@@ -12,20 +12,24 @@ public class Solution {
         //напишите тут ваш код
         Scanner scanner = new Scanner(System.in);
 
+        int res = 0;
         int[] ar = new int[3];
         for (int i = 0; i < ar.length; i++) {
             ar[i] = scanner.nextInt();
         }
 
-        for (int i = 0; i < ar.length ; i++) {
-            for (int j = 0; j < ar.length; j++) {
-                if(i!=j){
-                    if (ar[i] == ar[j]) {
-                        System.out.println(ar[i]);
-                    }
+        for (int i = 1; i < ar.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (ar[i] == ar[j]) {
+                    res = ar[i];
+                }
+                else {
+                    res += (ar[i]+ar[j]);
+                    res = (res/2)/ar.length;
                 }
             }
         }
+        System.out.println(res);
 
 
 //        if (ar[0] == ar[1] || ar[1] == ar[2]) {
