@@ -12,35 +12,24 @@ public class Solution {
         //напишите тут ваш код
         Scanner scanner = new Scanner(System.in);
 
-        int res = 0;
+        int res = 0, sum = 0;
         int[] ar = new int[3];
         for (int i = 0; i < ar.length; i++) {
             ar[i] = scanner.nextInt();
         }
 
-        for (int i = 1; i < ar.length; i++) {
-            for (int j = 0; j < i; j++) {
+        /*Arrays.sort(ar); // слишком просто
+        System.out.println(ar[1]);*/
+        for (int i = 0; i < ar.length; i++) { // не правильно понял задание, пытался вывести среднее арифметическое
+            for (int j = 0; j <= i; j++) {
                 if (ar[i] == ar[j]) {
                     res = ar[i];
                 }
-                else if (ar[i] != ar[j]){
-                    res += (ar[i]+ar[j]);
-                    //res = (res/2)/ar.length;
+                else {
+                    res = sum - Math.min(ar[i],Math.min(ar[j],ar[j+1]));
                 }
             }
         }
         System.out.println(res);
-//        System.out.println(ar[0] +" " + ar[1] + " " +ar[2]);
-
-
-//        if (ar[0] == ar[1] || ar[1] == ar[2]) {
-//            System.out.println(ar[2]);
-//        }
-//        if (ar[0] == ar[1] || ar[0] == ar[2]) {
-//            System.out.println(ar[0]);
-//        } else {
-//            System.out.println((ar[0] + ar[1] + ar[2]) / ar.length);
-//        }
-
     }
 }

@@ -12,7 +12,7 @@ public class Solution {
         //напишите тут ваш код
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int sum = 0;
-
+        reader.close();
         while(true){
             int number = Integer.parseInt(reader.readLine());
             sum += number;
@@ -20,6 +20,7 @@ public class Solution {
                 break;
             }
         }
+
         System.out.println(sum);
     }
 }
