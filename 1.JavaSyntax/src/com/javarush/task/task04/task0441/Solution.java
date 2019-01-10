@@ -23,13 +23,14 @@ public class Solution {
                 if (ar[i] == ar[j]) {
                     res = ar[i];
                 }
-                else {
+                else if (ar[i] != ar[j]){
                     res += (ar[i]+ar[j]);
-                    res = (res/2)/ar.length;
+                    //res = (res/2)/ar.length;
                 }
             }
         }
         System.out.println(res);
+//        System.out.println(ar[0] +" " + ar[1] + " " +ar[2]);
 
 
 //        if (ar[0] == ar[1] || ar[1] == ar[2]) {
