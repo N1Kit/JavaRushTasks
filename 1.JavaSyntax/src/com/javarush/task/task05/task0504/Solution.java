@@ -1,6 +1,5 @@
 package com.javarush.task.task05.task0504;
 
-
 /* 
 Трикотаж
 */
@@ -8,6 +7,9 @@ package com.javarush.task.task05.task0504;
 public class Solution {
     public static void main(String[] args) {
         //напишите тут ваш код
+        Cat cat1 = new Cat("Barsik", 1, 1, 1);
+        Cat cat2 = new Cat("Murzik", 2, 2, 2);
+        Cat cat3 = new Cat("Porsche", 3, 3, 3);
     }
 
     public static class Cat {
