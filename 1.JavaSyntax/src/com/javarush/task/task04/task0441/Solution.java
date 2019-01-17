@@ -17,7 +17,7 @@ public class Solution {
         for (int i = 0; i < ar.length; i++) {
             ar[i] = scanner.nextInt();
         }
-
+        scanner.close();
         /*Arrays.sort(ar); // слишком просто
         System.out.println(ar[1]);*/
         for (int i = 0; i < ar.length; i++) { // не правильно понял задание, пытался вывести среднее арифметическое
