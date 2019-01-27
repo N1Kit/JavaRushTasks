@@ -18,6 +18,10 @@ public class Circle {
 
     public Circle(double x, double y) {
         //напишите тут ваш код
+        this.x = x;
+        this.y = y;
+        this.radius = 10;
+
     }
 
     public Circle() {
