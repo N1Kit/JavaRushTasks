@@ -20,10 +20,12 @@ public class Person {
         this.sex = sex;
     }
 
-    public void initialize(String name, int money, char sex) {
+    public void initialize(String name, int money, char sex, int weight, double size) {
         this.name = name;
         this.money = money;
         this.sex = sex;
+        this.weight = weight;
+        this.size = size;
     }
 
     public static void main(String[] args) {
