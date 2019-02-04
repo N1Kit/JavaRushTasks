@@ -28,10 +28,11 @@ public class Rectangle {
     }
 
     public Rectangle(Rectangle rectangle){
-        this.top = rectangle.top;
-        this.left = rectangle.left;
-        this.width = rectangle.width;
-        this.height = rectangle.height;
+//        this.top = rectangle.top;
+//        this.left = rectangle.left;
+//        this.width = rectangle.width;
+//        this.height = rectangle.height;
+        this(rectangle.top, rectangle.left, rectangle.width, rectangle.height);
     }
 
     public static void main(String[] args) {
