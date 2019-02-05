@@ -10,7 +10,7 @@ public class Cat {
 
     }
 
-    protected void finalize() throws Throwable{
+    protected void finalize() throws Throwable {
 
     }
 }
