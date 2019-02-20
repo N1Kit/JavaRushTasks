@@ -28,6 +28,7 @@ public class Circle {
         this.width = width;
         this.color = color;
     }
+
     public static void main(String[] args) {
 
     }
