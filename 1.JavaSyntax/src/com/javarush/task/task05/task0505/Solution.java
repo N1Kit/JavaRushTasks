@@ -13,7 +13,6 @@ public class Solution {
         System.out.println(cat1.fight(cat2));
         System.out.println(cat1.fight(cat3));
         System.out.println(cat2.fight(cat3));
-
     }
 
     public static class Cat {

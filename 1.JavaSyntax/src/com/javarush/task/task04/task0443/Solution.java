@@ -17,7 +17,6 @@ public class Solution {
         int y = Integer.parseInt(reader.readLine());
 
         System.out.println("Меня зовут " + name + ".");
-        System.out.println("Я родился " + d + "." + m +"."+ y);
-
+        System.out.println("Я родился " + y + "." + m +"."+ d);
     }
 }

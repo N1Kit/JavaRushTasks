@@ -23,7 +23,6 @@ public class Solution {
             }
         }scanner.close();
         System.out.println(sum/i);
-
     }
 }
 

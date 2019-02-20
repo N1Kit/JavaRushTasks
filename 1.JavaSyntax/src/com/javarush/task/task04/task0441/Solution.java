@@ -4,7 +4,8 @@ package com.javarush.task.task04.task0441;
 /* 
 Как-то средненько
 */
-
+import java.io.*;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Solution {
@@ -16,20 +17,22 @@ public class Solution {
         int[] ar = new int[3];
         for (int i = 0; i < ar.length; i++) {
             ar[i] = scanner.nextInt();
+            sum = sum + ar[i];
         }
         scanner.close();
-        /*Arrays.sort(ar); // слишком просто
-        System.out.println(ar[1]);*/
-        for (int i = 0; i < ar.length; i++) { // не правильно понял задание, пытался вывести среднее арифметическое
-            for (int j = 0; j <= i; j++) {
-                if (ar[i] == ar[j]) {
-                    res = ar[i];
-                }
-                else {
-                    res = sum - Math.min(ar[i],Math.min(ar[j],ar[j+1]));
-                }
-            }
-        }
-        System.out.println(res);
+        Arrays.sort(ar); // слишком просто
+        System.out.println(ar[1]);
+//        for (int i = 0; i < ar.length; i++) { // не правильно понял задание, пытался вывести среднее арифметическое
+//            for (int j = 0; j <= i; j++) {
+//                if (ar[i] == ar[j]) {
+//                    res = ar[j];
+//                }
+//                else {
+//                    res = sum - Math.min(ar[i],Math.min(ar[j],ar[j+1]));
+//                }
+//            }
+//        }
+//        System.out.println(res);
+//        System.out.println(sum);
     }
 }

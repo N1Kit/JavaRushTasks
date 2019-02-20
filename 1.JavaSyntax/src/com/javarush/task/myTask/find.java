@@ -15,21 +15,23 @@ public class find {
         for (int i = 1; i < arr1.length; i++) { //создание и вывод 1-го массива на экран
             for (int j = 1; j < arr1.length; j++) {
                 arr1[i][j] = i*j;
-            //    System.out.printf("%3s", arr1[i][j]);
+                System.out.printf("%3s", arr1[i][j]);
             }
-        //    System.out.println();
+            System.out.println();
         }
         System.out.println();
 
-        for (int i = 1; i < arr1.length; i++) { //создание и вывод 2-го массива на экран
+        arr2 = arr1.clone();    // копирование массива
+        for (int i = 1; i < arr1.length; i++) { // вывод 2-го массива на экран
             for (int j = 1; j < arr1.length; j++) {
-                arr2[i][j] = j*2;
-            //    System.out.printf("%3s", arr2[i][j]);
+                //arr2[i][j] = j*2;
+                System.out.printf("%3s", arr2[i][j]);
             }
-        //    System.out.println();
+            System.out.println();
         }
+        System.out.println();
 
-        for (int i = 1; i < arr1.length; i++) { //создание и вывод массива на экран
+        for (int i = 1; i < arr1.length; i++) { //создание и вывод третьего массива на экран
             for (int j = 1; j < arr1.length; j++) {
                 arr1[i][j] = i*j;
                 System.out.printf("%3s", arr1[i][j]);

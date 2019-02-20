@@ -9,7 +9,6 @@ public class Friend {
     public String name;
     public int age;
     public char sex;
-    public String info;
 
     public void initialize(String name){
         this.name = name;
@@ -21,7 +20,9 @@ public class Friend {
     }
 
     public void initialize(String name, int age, char sex){
-        this.info = name + age + sex;
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
     }
 
     public static void main(String[] args) {
