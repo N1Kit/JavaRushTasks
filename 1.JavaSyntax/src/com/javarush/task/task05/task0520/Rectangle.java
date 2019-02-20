@@ -32,7 +32,7 @@ public class Rectangle {
 //        this.left = rectangle.left;
 //        this.width = rectangle.width;
 //        this.height = rectangle.height;
-        this(rectangle.top, rectangle.left, rectangle.width, rectangle.height);
+        this(rectangle.top, rectangle.left, rectangle.width, rectangle.height); // более компактный способ вызвать конструктор внутри этого конструктора
     }
 
     public static void main(String[] args) {

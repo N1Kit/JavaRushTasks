@@ -9,6 +9,7 @@ public class Friend {
     public String name;
     public int age;
     public char sex;
+    public String info;
 
     public void initialize(String name){
         this.name = name;
@@ -23,6 +24,7 @@ public class Friend {
         this.name = name;
         this.age = age;
         this.sex = sex;
+    //    this.info = name + " " + age + " " + sex;     //так, вроде, тоже можно, но валидацию не проходит
     }
 
     public static void main(String[] args) {
