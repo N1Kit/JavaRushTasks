@@ -1,6 +1,6 @@
 package com.javarush.task.task06.task0602;
 
-/*
+/* 
 Пустые кошки, пустые псы
 */
 
@@ -9,19 +9,17 @@ public class Cat {
 
     }
 
-    protected void finalize() throws Throwable{
-        //напишите тут ваш код
-        System.out.println("A Cat was destroyed");
-    }
+    //напишите тут ваш код
 
-    public Cat(){
-        System.out.println("A Cat was created");
+    protected void finalize() throws Throwable {
+        System.out.println("A Cat was destroyed");
     }
 }
 
 class Dog {
-    protected void finalize() throws Throwable{
-        //напишите тут ваш код
+    //напишите тут ваш код
+
+    protected void finalize() throws Throwable {
         System.out.println("A Dog was destroyed");
     }
 }
