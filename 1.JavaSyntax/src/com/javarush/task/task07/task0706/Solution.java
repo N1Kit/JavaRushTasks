@@ -25,7 +25,9 @@ public class Solution {
         }
         sc.close();
 
-        System.out.println(evenCount);
-        System.out.println(oddCount);
+        if (oddCount>evenCount)
+            System.out.println("В домах с нечетными номерами проживает больше жителей.");
+        else
+            System.out.println("В домах с четными номерами проживает больше жителей.");
     }
 }
