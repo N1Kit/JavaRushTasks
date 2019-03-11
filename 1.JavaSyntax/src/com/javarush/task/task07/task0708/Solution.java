@@ -15,24 +15,26 @@ public class Solution {
 
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-        int maxInt;
-        String maxStr = "";
         strings = new ArrayList<>();
+
+        String maxStr = "";
         Scanner scanner = new Scanner(System.in);
 
-        for (int i = 0; i < 5; i++) {
-            String s = scanner.next();
+        for (int i = 0; i < 5; i++) {   // добавление строк в список
+            String s = scanner.nextLine();
             strings.add(s);
+        }
+        scanner.close();
 
+        for (String string : strings) {       // нашли самую длинную строку в списке
+            if (maxStr.length() < string.length())
+                maxStr = string;
         }
 
-        for (int i = 0;  i < strings.size(); i++) {
-            maxStr = strings.get(0);
-            if (maxInt < strings.get(i).length())
-                 maxStr = strings.get(i);
-            //System.out.println(strings.get(i));
-
+        for (String str : strings) {        // вывод строк с одинаковым максимальным количеством символов
+            if(str.length() == maxStr.length()){
+                System.out.println(str);
+            }
         }
-        System.out.println(maxStr);
     }
 }
