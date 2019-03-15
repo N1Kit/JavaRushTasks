@@ -31,6 +31,7 @@ public class Solution {
             else
                 restList.add(mainList.get(i));
         }
+        reader.close();
 
         printList(kratn3);
         printList(kratn2);
