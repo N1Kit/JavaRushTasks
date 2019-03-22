@@ -18,17 +18,14 @@ public class Solution {
         int n = Integer.parseInt(reader.readLine());
         int m = Integer.parseInt(reader.readLine());
 
-        System.out.println("qqqq");
         for (int i = 0; i < n; i++) {
             list.add(reader.readLine());
         }
+        reader.close();
 
-        System.out.println("rrrrr");
-        for (int j = 0; j < m; j++) {
-            list.add(list.get(j));
-            j++;
-            list.remove(j);
-            j--;
+        for (int j = 1; j <= m; j++) {
+            list.add(list.get(0));
+            list.remove(0);
         }
 
         for (String s: list) {
