@@ -10,10 +10,13 @@ public class test {
     int sum = 0;
     for (int i = 0; i < mas.length ; i++) {
       mas[i] = sc.nextInt();
-      if (mas[i]!=mas[]){
-        sum += mas[i];
-      }
     }
+//    for (int i : mas ) {
+//      if (mas[mas.length]!=mas[mas.length-1]){
+//          sum += mas[i];
+//    }
+
+//    }
     System.out.println(Arrays.toString(mas));
     System.out.println(sum);
   }
