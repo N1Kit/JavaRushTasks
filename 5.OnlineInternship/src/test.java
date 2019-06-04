@@ -8,15 +8,18 @@ public class test {
     int n = sc.nextInt();
     int[] mas = new int[n];
     int sum = 0;
-    for (int i = 0; i < mas.length ; i++) {
+    for (int i = 0; i < mas.length; i++) {
       mas[i] = sc.nextInt();
     }
-//    for (int i : mas ) {
-//      if (mas[mas.length]!=mas[mas.length-1]){
-//          sum += mas[i];
-//    }
+    for (int i = 0; i < mas.length; i++) {
+      for (int j = 1; j < mas.length; j++) {
+        sum = mas[0];
+        if (mas[i] != mas[j]) {
+          sum = mas[i] + mas[j];
+        }
+      }
+    }
 
-//    }
     System.out.println(Arrays.toString(mas));
     System.out.println(sum);
   }
