@@ -30,7 +30,7 @@ public class Solution {
         }
 
         for (int i = 0; i < resultStrings.size(); i++) {
-            System.out.println(resultStrings.get(i));
+            System.out.print(resultStrings.get(i) + " ");
         }
     }
 }
