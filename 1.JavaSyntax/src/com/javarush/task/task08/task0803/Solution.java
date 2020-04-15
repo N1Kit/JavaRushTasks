@@ -1,5 +1,6 @@
 package com.javarush.task.task08.task0803;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /* 
@@ -20,7 +21,11 @@ public class Solution {
 
     public static Map<String, Cat> addCatsToMap(String[] cats) {
         //напишите тут ваш код
-
+        Map<String, Cat> catomaps = new HashMap<String, Cat>();
+        for (int i = 0; i < cats.length; i++) {
+            catomaps.put(cats[i], new Cat(cats[i]));
+        }
+        return catomaps;
     }
 
 
