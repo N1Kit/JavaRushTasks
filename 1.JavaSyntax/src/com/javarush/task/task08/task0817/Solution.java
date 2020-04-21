@@ -15,7 +15,7 @@ public class Solution {
         map.put("Иванов", "Иван");
         map.put("Петров", "Петр");
         map.put("Никитин", "Никита");
-        map.put("Андреев", "Андрей");
+        map.put("Андреев", "Сергей");
         map.put("Михайлов", "Михаил");
         map.put("Александров", "Александр");
         map.put("Юрьев", "Юрий");
@@ -42,7 +42,6 @@ public class Solution {
                 map.remove(pair.getKey());
             }
         }
-        System.out.println(map);
     }
 
     public static void main(String[] args) {
