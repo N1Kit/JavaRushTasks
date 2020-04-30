@@ -11,16 +11,23 @@ import java.util.Arrays;
 */
 
 public class Solution {
-    public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String string = reader.readLine();
-        String string2 = "";
-        //напишите тут ваш код
-       String[] words = string.split("\\s");
-      for ( String s: words) {
-        s = s.substring(0, 1).toUpperCase() + s.substring(1);
-        string2 = string2 + s + " ";
-      }
-       System.out.println(string2);
+  public static void main(String[] args) throws IOException {
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    String string = reader.readLine();
+
+    //напишите тут ваш код
+    String delim = " ";
+    String string2 = "";
+    while (string.contains("  ")) {
+      string = string.replace("  ", " ").trim();
     }
+
+    String[] words = string.split(delim);
+    for (String s : words) {
+
+      s = Character.toUpperCase(s.charAt(0)) + s.substring(1);
+      string2 += s + delim;
+    }
+    System.out.println(string2);
+  }
 }
