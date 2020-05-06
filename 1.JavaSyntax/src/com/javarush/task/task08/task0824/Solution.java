@@ -24,13 +24,14 @@ public class Solution {
         Human mam1 = new Human("mom1", false, 29, chld1);
         ArrayList<Human> chld2 = new ArrayList<>();
         chld2.add(pap1);
-        chld2.add(mam1);
+        ArrayList<Human> chld3 = new ArrayList<>();
+        chld3.add(mam1);
 
         Human ded1 = new Human("deda1",true, 67, chld2);
-        Human bab1 = new Human("bab1", false,  65);
+        Human bab1 = new Human("bab1", false,  65, chld2);
 
-        Human ded2 = new Human("deda2",true, 71);
-        Human bab2 = new Human("bab2", false,  69, chld2);
+        Human ded2 = new Human("deda2",true, 71, chld3);
+        Human bab2 = new Human("bab2", false,  69, chld3);
 
         System.out.println(ded1);
         System.out.println(ded2);
