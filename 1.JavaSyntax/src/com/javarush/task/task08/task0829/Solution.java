@@ -13,23 +13,24 @@ import java.util.Map;
 */
 
 public class Solution {
-    public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+  public static void main(String[] args) throws IOException {
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        Map<String, String> list = new HashMap<>();
-        String city = "";
-        while (true) {
-            city = reader.readLine();
-            String family = reader.readLine();
-            if (city.equals("")) break;
-            else
-            list.put(city, family);
-        }
-
-        // Read the house number
-        //int houseNumber = Integer.parseInt(reader.readLine());
-
-        System.out.println(list.get(city));
-
+    Map<String, String> list = new HashMap<>();
+    String city;
+    while (true) {
+      city = reader.readLine();
+      if (city.isEmpty()) break;
+      else {
+        String family = reader.readLine();
+        list.put(city, family);
+      }
     }
+    // Read the house number
+    //int houseNumber = Integer.parseInt(reader.readLine());
+
+    city = reader.readLine();   // Read the city
+    System.out.println(list.get(city));
+
+  }
 }
